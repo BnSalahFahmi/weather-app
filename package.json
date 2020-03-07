@@ -11,5 +11,8 @@
     "url": "git+https://github.com/BnSalahFahmi/weather-app.git"
   },
   "author": "Fahmi BEN SALAH",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
