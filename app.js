@@ -1,12 +1,20 @@
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
-geocode('New York', (error, response) => {
-    console.log('Error', error)
-    console.log('Response', response)
-})
+const address = process.argv[2]
 
-forecast(-75.7088, 44.1545, (error, response) => {
-    console.log('Error', error)
-    console.log('Response', response)
-})
+if (address) {
+    geocode(address, (error, response) => {
+        if (error) {
+            return console.log('Error occured during the connection to geocode service !')
+        }
+        forecast(response.latitude, response.longitude, (error, response) => {
+            if (error) {
+                return console.log('Error occured during the connection to weather service !')
+            }
+            console.log(response)
+        })
+    })
+} else {
+    console.log('Please provide an address !')
+}
