@@ -1,10 +1,13 @@
+const path = require('path')
 const express = require('express')
 var config = require('./config/config')
 
 const app = express()
 
+app.use(express.static(path.join(__dirname, '../public')))
+
 app.get('', (req, res) => {
-    res.send('<h1>Hello Express !</h1>')
+    res.status(200).sendFile('index.html');
 })
 
 const port = process.env.PORT || config.server.port;
