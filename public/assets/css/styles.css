@@ -1,15 +1,102 @@
+body {
+    font-family: Roboto,Noto,sans-serif;
+}
+
 .logo {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .logo span {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 0.1em;
     color: #202020;
     text-decoration: none;
     display: inline-block;
     pointer-events: auto;
+}
+
+.footer {
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-top: 1px solid #eee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+.node-link {
+    text-decoration: none !important;
+    text-align: center;
+    white-space: nowrap;
+    color: #757575 !important;
+    padding-bottom: 20px;
+}
+
+.global-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 80% !important;
+}
+
+.submit-button {
+    width: 200px;
+    margin-left: 2px;
+    border-radius: 2px !important;
+    background-color: #E0E0E0;
+    background-color: #e96e50;
+    border-color: #c1593f !important;
+    color: white;
+    cursor: pointer;
+}
+
+.location-input {
+    border-radius: 1px !important;
+    margin-bottom: 10px;
+}
+
+.locations {
+    margin-top: 20px;
+    font-size: 14px !important;
+}
+
+.locations .list-group {
+    margin-bottom: 5px;
+}
+
+.locations .location-name {
+    color: #e96e50;
+    font-weight: 700;
+    font-size: 15px !important;
+}
+
+.locations .summary {
+    color: #000;
+    margin-left: 8px;
+    font-family: Roboto,sans-serif;
+    color: #505050;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.locations .geo-coords {
+    color: #e96e50;
+}
+
+.weather-icon {
+    width: 50px;
+    margin-top: -10px;
+    margin-right: -10px;
+}
+
+#loader {
+    text-align: center;
+    margin: 10px;
+}
+
+.empty-data {
+    text-align: center;
 }

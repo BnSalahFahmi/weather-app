@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="global-container">
+        {{>header}}
+        <form action="" id='weather-form'>
+            <div class="input-group">
+                <input class="form-control location-input width100" id="search-input" placeholder="Enter a City ...">
+                <span class="input-group-btn">
+                    <button class="btn submit-button">Get Weather</button>
+                </span>
+            </div>
+        </form>
+        <p id="loader"></p>
+        <p id="error"></p>
+        <div class="locations" id="forecast-data"></div>
+    </div>
+    {{>footer}}
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
