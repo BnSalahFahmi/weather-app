@@ -6,7 +6,21 @@
 
 A live [demo](https://nodejs-weather-web-app.herokuapp.com/) of weather-app is hosted on Heroku.
 
-# API References
+## Install dependencies
+
+```bash
+npm install
+```
+
+## Run it
+
+```bash
+node server.js
+```
+
+Navigate to `http://localhost:3000/` and enjoy your App !
+
+## API References
 
 Mapbox : https://www.mapbox.com
 - provides coordinates for a specific address
