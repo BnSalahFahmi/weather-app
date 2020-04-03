@@ -5,6 +5,7 @@
 ## Demo
 
 A live [demo](https://nodejs-weather-web-app.herokuapp.com/) of weather-app is hosted on Heroku.
+![alt text](preview.png)
 
 ## Install dependencies
 
